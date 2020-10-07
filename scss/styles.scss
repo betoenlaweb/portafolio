@@ -1,0 +1,764 @@
+$logoPosition: 1px 0px 0px 50px;
+
+
+
+
+
+/**NAV BAR**/
+
+
+.header_logo {
+	margin: $logoPosition;
+}
+
+
+
+.header {
+	background-color: white;
+	position: fixed;
+	border-bottom: 1px solid #e6e6e6;
+	z-index: 2;
+	box-shadow: 0px 25px 65px #ffffff;
+	height: 100px;
+	width: 88%;
+	justify-content: space-between;
+	margin-left: 3%;
+
+}
+
+
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000; 
+  top: 0;
+  left: 0; 
+  background-color: #ffbe00;
+  overflow-x: hidden;
+  transition: 0.3s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 30%;
+  text-align: left;
+  margin-left: 140px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 70px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+  font-weight: 900;
+  font-family: "Work Sans", sans-serif;
+
+
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #17171b;
+}
+
+
+
+
+
+.overlay .closebtn {
+  position: absolute;
+  top: 0px;
+  right: 140px;
+  font-size: 60px;
+}
+
+
+.fixed-action-btn {
+    position: fixed;
+    z-index: 998;
+    right: 140px;
+    top: 5px;
+
+}
+
+.btn-floating.btn-lg {
+    width: 57px;
+    height: 57px;
+    box-shadow: 0 3px 18px 0 rgba(0,0,0,0.05), 0 0px 1px 0 rgba(0,0,0,.1);
+
+}
+
+
+
+
+.btn-floating {
+    
+    width: 47px;
+    height: 47px;
+    z-index: 1;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    margin: 10px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+.btn-floating.btn-lg p {
+    font-size: 1.625rem;
+    justify-content: center;
+}
+
+
+.btn-floating p {
+    font-size: 1.25rem;
+    line-height: 47px;
+    display: flex;
+    text-align: center;
+    
+}
+
+#plus {
+  font-weight: 500;
+  font-size: 60px;
+  color: #eaeaea;
+  transition: 0.4s;
+  -webkit-transition: all .2s ease-in-out;
+
+
+ 
+}
+
+ a:hover {
+  text-decoration: none;
+  
+}
+
+.fixed-action-btn a:hover {
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,.09), 0 4px 15px 0 rgba(0,0,0,.15);
+  width: 60px;
+  height: 60px;
+
+}
+
+#plus:hover {
+  font-size: 65px;
+  color: #ff4b03;
+
+} 
+
+
+/**CONTENIDO**/
+
+.box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: start;
+	align-items: center;
+	margin-top: 21%; 
+	margin-left: 6%;
+	grid-gap: 15px;	
+}
+
+
+$ancho: 450px;
+$alto: 450px;
+$borde: 6px;
+$hover: rgba(255, 255, 255, 0.9);
+
+
+@mixin container ($ancho, $alto, $borde) {
+	width: $ancho;
+	height: $alto;
+	border-radius: $borde;
+	box-shadow: 0 2.5px 4px rgba(187,187,187,0.1), 0 6px 14px rgba(187,187,187,0.1);
+	transition: all 0.6s cubic-bezier(.45,.9,.45,1.4);
+	background-size: cover;
+  	overflow: hidden;
+}
+
+.box_cooquick {
+	@include container($ancho,$alto, $borde)
+}
+
+.box_engraven {
+	@include container($ancho, $alto, $borde)
+}
+
+.box_vuela {
+	@include container($ancho, $alto, $borde)
+}
+
+.box_bares {
+	@include container($ancho, $alto, $borde)
+}
+
+.box_cumple {
+	@include container($ancho, $alto, $borde)
+}
+
+.box_conamerica {
+	@include container($ancho, $alto, $borde)
+}
+
+.box_sorority {
+	@include container($ancho, $alto, $borde)
+}
+
+.box_teprovocapp {
+	@include container($ancho, $alto, $borde)
+}
+
+.box_ideando {
+	@include container($ancho, $alto, $borde)
+}
+
+.box_zulia {
+  @include container($ancho, $alto, $borde)
+}
+
+
+.box_calavera {
+  @include container($ancho, $alto, $borde)
+}
+
+.box_alien {
+  @include container($ancho, $alto, $borde)
+}
+
+.box_atletismo {
+  @include container($ancho, $alto, $borde)
+}
+
+.box_pizza {
+  @include container($ancho, $alto, $borde)
+}
+
+.box_tommy {
+  @include container($ancho, $alto, $borde)
+}
+
+@mixin hover ($ancho, $alto, $borde, $hover) {
+	background: $hover;
+  	text-align: center;
+  	opacity: 0;
+ 	 -webkit-transition: opacity 0.25s ease;
+ 	  -moz-transition: opacity 0.25s ease;
+  	width: $ancho;
+  	height: $alto;
+  	border-radius: $borde; 
+  	margin-top: -100%;
+  	position: sticky;
+  	padding: 350px 0 66px 0;
+}
+
+.box_cooquick_hover {
+	@include hover($ancho, $alto, $borde, $hover)
+}
+
+.box_engraven_hover {
+	@include hover($ancho, $alto, $borde, $hover)
+}
+
+.box_vuela_hover {
+	@include hover($ancho, $alto, $borde, $hover)
+}
+
+.box_bares_hover {
+	@include hover($ancho,$alto, $borde, $hover)
+}
+
+.box_cumple_hover {
+	@include hover($ancho, $alto, $borde, $hover)
+}
+
+.box_conamerica_hover {
+	@include hover($ancho, $alto, $borde, $hover)
+}
+
+.box_sorority_hover {
+	@include hover($ancho, $alto, $borde, $hover)
+}
+
+.box_teprovocapp_hover {
+	@include hover($ancho, $alto, $borde, $hover)
+}
+
+.box_ideando_hover {
+	@include hover($ancho, $alto, $borde, $hover)
+}
+
+.box_zulia_hover {
+  @include hover($ancho, $alto, $borde, $hover)
+}
+
+.box_calavera_hover {
+  @include hover($ancho, $alto, $borde, $hover)
+}
+
+.box_alien_hover {
+  @include hover($ancho, $alto, $borde, $hover)
+}
+
+.box_atletismo_hover {
+  @include hover($ancho, $alto, $borde, $hover)
+}
+
+.box_pizza_hover {
+  @include hover($ancho, $alto, $borde, $hover)
+}
+
+.box_tommy_hover {
+  @include hover($ancho, $alto, $borde, $hover)
+}
+
+
+/**CONTENIDO_HOVER**/
+
+.box_cooquick:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+.box_cooquick_hover:hover {
+	opacity: 50;
+} 
+
+
+.box_engraven:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+.box_engraven_hover:hover {
+	opacity: 50;
+} 
+
+
+.box_vuela:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+.box_vuela_hover:hover {
+	opacity: 50;
+} 
+
+
+.box_bares:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+.box_bares_hover:hover {
+	opacity: 50;
+} 
+
+
+.box_cumple:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+.box_cumple_hover:hover {
+	opacity: 50;
+}  
+
+
+.box_conamerica:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+.box_conamerica_hover:hover {
+	opacity: 50;
+} 
+
+
+.box_sorority:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+.box_sorority_hover:hover {
+	opacity: 50;
+} 
+
+
+.box_teprovocapp:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+.box_teprovocapp_hover:hover {
+	opacity: 50;
+} 
+
+.box_ideando:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+.box_ideando_hover:hover {
+	opacity: 50;
+} 
+
+
+.box_zulia:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+.box_zulia_hover:hover {
+  opacity: 50;
+} 
+
+
+.box_calavera:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+.box_calavera_hover:hover {
+  opacity: 50;
+} 
+
+
+.box_alien:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+.box_alien_hover:hover {
+  opacity: 50;
+} 
+
+
+.box_atletismo:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+.box_atletismo_hover:hover {
+  opacity: 50;
+} 
+
+.box_pizza:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+.box_pizza_hover:hover {
+  opacity: 50;
+} 
+
+
+.box_tommy:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+.box_tommy_hover:hover {
+  opacity: 50;
+} 
+
+#font {
+	font-family: Source Code Pro, serif;
+	font-size: 15px;
+	font-weight: 500;
+	color: #6b6b6b;
+}
+
+
+
+/**MODAL**/
+
+.content-modal {
+  margin-bottom: 1em;
+  width: 700px;
+  top: 100%;
+  left: 100px;
+  position: relative;
+  text-align: justify;
+
+
+}
+
+
+
+a.modal-open {
+  display:block;
+  padding: 10px;
+  color: #6b6b6b;
+  font-family: Source Code Pro;
+  font-weight: 700;
+  margin:50px auto;
+  width: 170px;
+  border: 2px solid;
+  border-radius: 25px;
+  border-color: #6b6b6b;
+  text-align:center;
+  text-decoration:none;
+  position: relative;
+  bottom: 210px;
+}
+
+
+.modal {
+  background: rgba(0,0,0,0.7);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  transition:all .5s ease-in-out;
+  opacity: 0;
+  z-index: -1;
+  display: flex; 
+}
+
+
+.modal:target {
+  opacity: 1;
+  transition:all .5s ease-in-out;
+  z-index: +8;
+}
+
+.modal-content {
+
+  position: fixed;
+  margin: 40px 40px 40px 40px;
+  width: 95%;
+  height: 91%;
+  background: #fff;
+  border-radius: 10px;
+  transform: scale(0);
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  outline: 1px solid transparent;
+  opacity: 0;
+  font-family: Source Code Pro;
+}
+
+
+.modal:target .modal-content {
+
+  transform: scale(1);
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.22, 1.35);
+  transition-delay: .3s;
+  z-index: 9999;
+  opacity: 1;
+}
+
+.modal-close {
+  
+  text-decoration: none;
+  padding: 22px 22px;
+  color: #424242;
+  font-weight: 800;
+  transition: all .5s ease-in-out;
+  z-index: +1;
+  text-align: center;
+  border-radius: 0 4px 0 0;
+  width: 50px;
+  left: 95%;
+  position: relative;
+}
+
+
+.modal-close:hover {
+  color: red;
+  text-decoration: none;
+ 
+}
+
+.modal-content h3 {
+
+  
+  text-align: start;
+  text-transform: uppercase;
+  color: black;
+  top: 50%;
+  height: 50px;
+  font-size: 50px;
+  position: relative;
+}
+  
+
+.modal-area {
+
+  display: flex;
+  width: 1500px;
+  justify-content: space-evenly;
+
+}
+
+$color: #ffbe00;
+$fondo: auto;
+$alineado: center;
+$altura: 60px;	
+$peso: 700;
+
+@mixin titulo ($color, $fondo, $alineado, $altura, $peso) {
+	background: $color;
+    width: $fondo;
+    text-align: $alineado;
+    height: $altura;
+    font-weight: $peso;
+}
+
+
+#cooquick {
+	@include titulo ($color, $fondo, $alineado, $altura, $peso)
+	left: 465px;
+	
+}
+
+#engraven {
+	@include titulo ($color, $fondo, $alineado, $altura, $peso)
+	left: 480px;
+  
+}
+
+#vuela {
+	@include titulo ($color, $fondo, $alineado, $altura, $peso)
+	left: 650px;
+
+}
+
+#bares {
+	@include titulo ($color, $fondo, $alineado, $altura, $peso)
+	
+}
+
+#cumple {
+	@include titulo ($color, $fondo, $alineado, $altura, $peso)
+	left: 515px;
+
+}
+
+#conamerica {
+	@include titulo ($color, $fondo, $alineado, $altura, $peso)
+	left: 650px;
+	
+}
+
+#sorority {
+	@include titulo ($color, $fondo, $alineado, $altura, $peso)
+	left: 470px;
+	
+}
+
+#teprovocapp {
+	@include titulo ($color, $fondo, $alineado, $altura, $peso)
+	left: 560px; 
+	
+}
+
+#ideando {
+	@include titulo ($color, $fondo, $alineado, $altura, $peso)
+	left: 610px;
+	
+}
+
+#zulia {
+  @include titulo ($color, $fondo, $alineado, $altura, $peso)
+  left: 610px;
+  
+}
+
+
+#calavera {
+  @include titulo ($color, $fondo, $alineado, $altura, $peso)
+  left: 650px;
+  
+}
+
+#alien {
+  @include titulo ($color, $fondo, $alineado, $altura, $peso)
+  left: 470px;
+  
+}
+
+#atletismo {
+  @include titulo ($color, $fondo, $alineado, $altura, $peso)
+  left: 560px; 
+  
+}
+
+#pizza {
+  @include titulo ($color, $fondo, $alineado, $altura, $peso)
+  left: 610px;
+  
+}
+
+#tommy {
+  @include titulo ($color, $fondo, $alineado, $altura, $peso)
+  left: 610px;
+  
+}
+
+/**FOOTER STYLES**/
+
+.footer_contact {
+	color: grey;
+	font-family: Source Code Pro, serif;
+	text-decoration: none;
+	font-size: 15px;
+	
+	
+}
+
+.footer_contact:hover {
+	color: #ff4b03;
+	font-size: 16px; 
+	transition: 0.3s;
+	
+}
+
+.footer_brand {
+	color: grey;
+	font-size: 15px;
+	font-family: Source Code Pro, serif;
+		
+}
+
+.footer_brand:hover {
+	color: #ff4b03;
+	transition: 0.3s; 
+	font-size: 16px;	
+}
+
+
+.background { 
+	 background-color: #e8e8e8;
+	 width: 102%;
+	 height: 200px;
+	 margin-top: 25%;
+	 margin-left: -15px;
+	 padding: 30px 100px 30px 100px;
+		
+}
+
+
+
+
+
+
+/**img_fluid**/
+
+
+/**#ff4b03 rojo
+#ffbe00 amarillo oscuro
+c amarillo claro
+#fccf8f carne
+#e5eef6 gris
+#17171b negro
+**/
