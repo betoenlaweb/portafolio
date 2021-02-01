@@ -1,660 +1,338 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
-	<meta name="description" content="BetoenlaWeb is an animator who specializes in 2D animation. Logo animation, Social Media posts, intro for your YouTube channel and more.">
-	<meta name="keywords" content="Motion Design, Animator, 2D Animation, Animator, Freelance, Ilustration, 2D">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/style.css">
-	<title>BetoenlaWeb | Collection</title>	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BetoenlaWeb is an animator who specializes in 2D animation. Logo animation, Social Media posts, intro for your YouTube channel and more.">
+    <meta name="keywords" content="Motion Design, Animator, 2D Animation, Animator, Freelance, Ilustration, 2D">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/7dbacefa4c.js" crossorigin="anonymous"></script>
+    <title>BetoenlaWeb | Collection</title>
 </head>
-
 <body>
 
-	<div class="container-fluid">
+    <div class="load load-1 active"></div>
+    
+    <header id="header">
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="nav-bar">
+                    <div class="col-sm">
+                        <div id="logo"><a href="index.html"><img src="images/logo.png" class="img-fluid" alt="BetoenlaWeb-logo"></a></div>
+                    </div>
+                    <div class="col-sm">    
+                        <a class="bottom-menu" id="open-menu">+</a>
+                    </div>
+                </nav>
+                <div id="nav-menu" class="menu">
+                    <a href="javascript:void(0)" class="close-btn" id="close-menu">&times;</a>
+                    <div class="menu-content">
+                       <ul>
+                        <li class="item-menu"><a href="pages/about.html">ABOUT</a></li>
+                        <li class="item-menu"><a href="">COLLECTION</a></li>
+                       </ul>
+                    </div>   
+                </div>
+            </div>   
+        </div>
+    </header>
 
-		<div class="row">
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-xs-12 col-sm-12">
+                    <div class="box">
 
-			<div class="col-lg-12 col-xs-12 col-sm-12">
-
-				<nav class="header">
-
-					<div class="header_logo">
-
-						<a href="index.html"><img src="nav_Bar/images/Logo.png" class="img-fluid"
-								alt="LogoBetoenlaWeb"></a>
-
-					</div>
-
-					<div id="myNav" class="overlay">
-						<a href="javascript:void(0)" class="closebtn" id="closeNav">&times;</a>
-
-						<div class="overlay-content">
-							<a href="#" id="black">COLLECTION</a>
-							<a href="pages/about.html">ABOUT</a>
-						</div>
-
-					</div>
-
-					<div class="fixed-action-btn">
-
-						<a class="btn-floating btn-lg" id="openNav">
-							<p id="plus">+</p>
-						</a>
-					</div>
-
-				</nav>
-
-			</div>
-
-		</div>
-
-		<div class="row">
-
-			<div class="col-lg-12 col-xs-12 col-sm-12">
-
-				<div class="box">
-
-								
-					<div class="box_cooquick"><img src="images/cooquick_web.gif " id="size-box-tablet" class="img-fluid"
-							alt="cooquick_gif">
-
-						<div class="box_cooquick_hover">
-							<span id="font">Cooquick | Logo Animation</span>
-							<a class="modal-open" href="#modal-tabbed">View</a>
-						</div>
-
-						<div class="modal" id="modal-tabbed">
-
-							<div class="modal-content">
-
-								<a href="#box_cooquick" class="modal-close" title="Close Modal">X</a>
-
-								<div class="modal-area">
-									<div id="video-position" class="embed-responsive embed-responsive-4by3">
-										<div class="video-scroll-1">
-											<embed class="embed-responsive-item"
-												src="https://player.vimeo.com/video/469881820" width="640" height="640"
-												allowfullscreen></embed>
-										</div>
-
-									</div>
-									<h3 class="cooquick">Cooquick</h3>
-
-									<p class="content-modal">Cooquick entrusted me with their logo to make this short
-										but
+                        <div class="box-item" id="cooquick"><img src="images/cooquick.gif"  alt="cooquick" class="img-fluid rounded">
+                            <a class="item-hover" href="#modal-cooquick">
+                                <p>Tap to see</p>
+                            </a>
+                            <div class="modall" id="modal-cooquick">
+                                <div class="modall-content">
+                                    <a class="close-modall" id="fade-in" href="#cooquick">x</a>
+                                    <div id="video"><div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/469881820?byline=0&portrait=0" 
+                                        style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen; picture-in-picture">
+                                    </iframe></div><script src="https://player.vimeo.com/api/player.js"></script></div>
+                                    <ul>
+                                       <h2 class="tittle">Cooquick</h2>
+                                       <p class="description">Cooquick entrusted me with their logo to make this short but
 										fun logo animation made in Abode After Effects. Cooquick is a startup that wants
 										people to know that you can make healthy recipes quickly.</p>
-								</div>
+                                    </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        
 
-							</div>
+                        <div class="box-item" id="engraven"><img src="images/cooquick.jpg" alt="engraven" class="img-fluid rounded">
+                            <a class="item-hover" href="#modal-engraven">
+                                <p>Tap to see</p>
+                            </a>
+                            <div class="modall" id="modal-engraven">
+                                <div class="modall-content">
+                                    <a class="close-modall" href="#engraven">x</a>
+                                    <div id="video"><div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/469881817?byline=0&portrait=0" 
+                                        style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen; picture-in-picture">
+                                        </iframe></div><script src="https://player.vimeo.com/api/player.js" id="iframe"></script>
+                                        <div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/469881800?byline=0&portrait=0" 
+                                            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen; picture-in-picture">
+                                            </iframe></div><script src="https://player.vimeo.com/api/player.js" id="iframe"></script>
+                                    </div>
+                                    <ul>
+                                       <h2 class="tittle">Engraven</h2>
+                                       <p class="description">Here are two logo animations that I designed for
+                                        Engraven Usa. Scroll down on the video to see the other version of the 
+                                        logo animation. The design was provide by Engraven Usa.</p>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
 
-						</div>
-
-					</div>
-
-
-					<div class="box_engraven"><img src="images/engraven_web.gif" id="size-box-tablet" class="img-fluid"
-							alt="engraven_gif">
-
-
-						<div class="box_engraven_hover">
-							<span id="font">Engraven | Project</span>
-							<a class="modal-open" href="#modal-engraven">View</a>
-						</div>
-
-						<div class="modal" id="modal-engraven">
-
-							<div class="modal-content">
-
-								<a href="#box_engraven" class="modal-close" title="Close Modal">X</a>
-
-								<div class="modal-area">
-
-									<div id="video-position-scroll" class="embed-responsive embed-responsive-4by3">
-
-
-										<div class="video-scroll-1">
-											<embed class="embed-responsive-item"
-												src="https://player.vimeo.com/video/469881817" width="640" height="640"
-												allowfullscreen></embed></div>
-										<div class="video-scroll-2">
-											<embed class="embed-responsive-item"
-												src="https://player.vimeo.com/video/469881800" width="640" height="640"
-												allowfullscreen></embed></div>
-
-									</div>
-
-									<div class="text-align">
-										<h3 id="modal-content-scroll">Engraven</h3>
-
-										<p class="content-modal-scroll">Here are two logo animations that I designed for
-											Engraven Usa. Scroll down on the video to see the other version of the 
-											logo animation. The design was provide by Engraven Usa.</p>
-									</div>
-
-
-
-								</div>
-
-							</div>
-
-						</div>
-
-					</div>
-
-					<div class="box_vuela"><img src="images/vuela_web.jpg" id="size-box-tablet" class="img-fluid"
-							alt="cooquick_gif">
-
-
-						<div class="box_vuela_hover">
-							<span id="font">Wish i could Fly!! | Personal Project</span>
-							<a class="modal-open" href="#modal-vuela">View</a>
-						</div>
-
-
-						<div class="modal" id="modal-vuela">
-							<div class="modal-content">
-								<a href="#box_vuela" class="modal-close" title="Close Modal">X</a>
-
-								<div class="modal-area">
-
-									<div id="video-position" class="embed-responsive embed-responsive-4by3">
-										<div class="video-scroll-1">
-											<embed class="embed-responsive-item"
-												src="https://player.vimeo.com/video/469881896" width="640" height="640"
-												allowfullscreen></embed>
-										</div>
-
-
-									</div>
-
-									<h3>Wish i could fly</h3>
-
-									<p class="content-modal">Yes I wish I could fly, in fact I wish I was as cool as
+                        <div class="box-item" id="vuela"><img src="images/vuela.jpg" alt="vuela" class="img-fluid rounded">
+                            <a class="item-hover" href="#modal-vuela">
+                                <p>Tap to see</p>
+                            </a>
+                            <div class="modall" id="modal-vuela">
+                                <div class="modall-content">
+                                    <a class="close-modall" id="fade-in" href="#vuela">x</a>
+                                    <div id="video"><div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/469881896?byline=0&portrait=0" 
+                                        style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen; picture-in-picture">
+                                        </iframe></div><script src="https://player.vimeo.com/api/player.js"></script></div>
+                                    <ul>
+                                       <h2 class="tittle">Wish i could fly</h2>
+                                       <p class="description">Yes I wish I could fly, in fact I wish I was as cool as
 										that guy. This is an animation that I made just because I could ;). Pd: I
-										designed
-										all the characters too.</p>
+										designed all the characters too.</p>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
 
-								</div>
+                        <div class="box-item" id="conamerica"><img src="images/cooquick.jpg" alt="conamerica" class="img-fluid rounded">
+                            <a class="item-hover" href="#modal-conamerica">
+                                <p>Tap to see</p>
+                            </a>
+                            <div class="modall" id="modal-conamerica">
+                                <div class="modall-content">
+                                    <a class="close-modall" id="fade-in" href="#conamerica">x</a>
+                                    <div id="video"><div style="padding:100.83% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/469983712?byline=0&portrait=0" 
+                                        style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen; picture-in-picture">
+                                        </iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                                        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/469983819?byline=0&portrait=0" 
+                                            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen; picture-in-picture">
+                                            </iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                                            <div style="padding:100.83% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/469983940?byline=0&portrait=0" 
+                                            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen; picture-in-picture">
+                                            </iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                                            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/469983791?byline=0&portrait=0" 
+                                            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen; picture-in-picture">
+                                            </iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                                            <div style="padding:56.43% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/469983931?byline=0&portrait=0" 
+                                            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen; picture-in-picture">
+                                            </iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                                    </div>
+                                    <ul>
+                                       <h2 class="tittle">Conamerica Group</h2>
+                                       <p class="description">This series of animations were made during my time
+                                        at the company "Conamerica Consultaria" in Venezuela back in 2016/2017. I
+                                        learned a lot of cool stuff here and got to know and connect with people to
+                                        participate in more interesting projects. Scroll down on the video 
+                                        to see the rest of the project.</p>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
 
-							</div>
+                        <div class="box-item" id="bares"><img src="images/cooquick.jpg" alt="bares" class="img-fluid rounded">
+                            <a class="item-hover" href="#modal-bares">
+                                <p>Tap to see</p>
+                            </a>
+                            <div class="modall" id="modal-bares">
+                                <div class="modall-content">
+                                    <a class="close-modall" id="fade-in" href="#bares">x</a>
+                                    <div id="video"><div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/469881843?byline=0&portrait=0" 
+                                        style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen; picture-in-picture">
+                                        </iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                                        <div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/469983688?byline=0&portrait=0" 
+                                        style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen; picture-in-picture">
+                                        </iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                                        <div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/469983949?byline=0&portrait=0" 
+                                        style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen; picture-in-picture">
+                                        </iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                                    </div>
+                                    <ul>
+                                       <h2 class="tittle">Bares Coocktail</h2>
+                                       <p class="description">This project was one of the firsts in my career as an
+                                        animator and one of the ones that I remember the best because of everything I
+                                        learned working on it. I joined with Bares Cocktails to make 3 animations for
+                                        their social networks including a logo animation. Scroll down on the video
+                                        to see the rest of the project.</p>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
 
-						</div>
-
-					</div>
-
-					<div class="box_bares"><img src="images/bares_web.gif" id="size-box-tablet" class="img-fluid"
-							alt="engraven_gif">
-
-
-						<div class="box_bares_hover">
-							<span id="font">Bares Cocktail | Project</span>
-							<a class="modal-open" href="#modal-bares">View</a>
-						</div>
-
-						<div class="modal" id="modal-bares">
-
-							<div class="modal-content">
-								<a href="#box_bares" class="modal-close" title="Close Modal">X</a>
-
-								<div class="modal-area">
-
-
-									<div id="video-position-scroll" class="embed-responsive embed-responsive-4by3">
-
-
-										<div class="video-scroll-1">
-											<embed class="embed-responsive-item"
-												src="https://player.vimeo.com/video/469881843" width="640" height="640"
-												allowfullscreen></embed></div>
-										<div class="video-scroll-2">
-											<embed class="embed-responsive-item"
-												src="https://player.vimeo.com/video/469983688" width="640" height="640"
-												allowfullscreen></embed></div>
-										<div class="video-scroll-3">
-											<embed class="embed-responsive-item"
-												src="https://player.vimeo.com/video/469983949" width="640" height="640"
-												allowfullscreen></embed></div>
-
-									</div>
-
-									<div class="text-align">
-										<h3 id="modal-content-scroll">Bares Cocktails</h3>
-
-										<p class="content-modal-scroll">This project was one of the firsts in my career as an
-											animator and one of the ones that I remember the best because of everything
-											I
-											learned working on it. I joined with Bares Cocktails to make 3 animations
-											for
-											their social networks including a logo animation. Scroll down on the video
-											to see the rest of the project.</p>
-									</div>
-								</div>
-
-							</div>
-
-						</div>
-
-					</div>
-
-					<div class="box_cumple"><img src="images/cumple_web.gif" id="size-box-tablet" class="img-fluid"
-							alt="cumple_gif">
-
-
-						<div class="box_cumple_hover">
-							<span id="font">Since 1990 | Personal Project</span>
-							<a class="modal-open" href="#modal-cumple">View</a>
-						</div>
-
-						<div class="modal" id="modal-cumple">
-
-							<div class="modal-content">
-								<a href="#box_cumple" class="modal-close" title="Close Modal">X</a>
-
-								<div class="modal-area">
-
-									<div id="video-position" class="embed-responsive embed-responsive-4by3">
-										<div class="video-scroll-1">
-											<embed src="https://player.vimeo.com/video/469881801" width="640"
-												height="640" allowfullscreen></embed>
-										</div>
-
-
-									</div>
-
-									<h3 class="cumple">Since 1990</h3>
-
-									<p class="content-modal">A small tribute to my happy 30s and a reminder that time
+                        <div class="box-item" id="cumple"><img src="images/cumple.gif" alt="cumple" class="img-fluid rounded">
+                            <a class="item-hover" href="#modal-cumple">
+                                <p>Tap to see</p>
+                            </a>
+                            <div class="modall" id="modal-cumple">
+                                <div class="modall-content">
+                                    <a class="close-modall" id="fade-in" href="#cumple">x</a>
+                                    <div id="video"><div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/469881801?byline=0&portrait=0" 
+                                        style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen; picture-in-picture">
+                                        </iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                                    </div>
+                                    <ul>
+                                       <h2 class="tittle">Since 1990's</h2>
+                                       <p class="description">A small tribute to my happy 30s and a reminder that time
 										flies by and you don't even realize it.</p>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="box-item" id="sorority"><img src="images/cooquick.jpg" alt="sorority" class="img-fluid rounded">
+                            <a class="item-hover" href="#modal-sorority">
+                                <p>Tap to see</p>
+                            </a>
+                            <div class="modall" id="modal-sorority">
+                                <div class="modall-content">
+                                    <a class="close-modall" id="fade-in" href="#sorority">x</a>
+                                    <div id="video"><div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/469983930?byline=0&portrait=0" 
+                                        style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen; picture-in-picture">
+                                        </iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                                    </div>
+                                    <ul>
+                                       <h2 class="tittle">Sorority</h2>
+                                       <p class="description">Rock Band Sorority!!!!</p>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
 
-								</div>
-							</div>
-						</div>
-
-					</div>
-
-					<div class="box_conamerica"><img src="images/conamerica_web.gif" id="size-box-tablet"
-							class="img-fluid" alt="conamerica_gif">
-
-
-						<div class="box_conamerica_hover">
-							<span id="font">Grupo Conamerica | Project</span>
-							<a class="modal-open" href="#modal-conamerica">View</a>
-						</div>
-
-						<div class="modal" id="modal-conamerica">
-
-							<div class="modal-content">
-								<a href="#box_conamerica" class="modal-close" title="Close Modal">X</a>
-
-								<div class="modal-area">
-
-									<div id="video-position-scroll" class="embed-responsive embed-responsive-4by3">
-
-
-										<div class="video-scroll-1">
-											<embed src="https://player.vimeo.com/video/469983712" width="640"
-												height="645" allowfullscreen></embed></div>
-										<div class="video-scroll-2">
-											<embed src="https://player.vimeo.com/video/469983819" width="640"
-												height="360" allowfullscreen></embed></div>
-										<div class="video-scroll-3">
-											<embed src="https://player.vimeo.com/video/469983940" width="640"
-												height="645" allowfullscreen></embed></div>
-										<div class="video-scroll-4">
-											<embed src="https://player.vimeo.com/video/469983791" width="640"
-												height="360" allowfullscreen></embed></div>
-										<div class="video-scroll-5">
-											<embed src="https://player.vimeo.com/video/469983931" width="640"
-												height="361" allowfullscreen></embed></div>
-									</div>
-
-									<div class="text-align">
-										<h3 id="modal-content-scroll">Grupo Conamerica</h3>
-
-										<p class="content-modal-scroll">This series of animations were made during my time
-											at the company "Conamerica Consultaria" in Venezuela back in 2016/2017. I
-											learned a lot of cool stuff here and got to know and connect with people to
-											participate in more interesting projects. Scroll down on the video 
-											to see the rest of the project.
-										</p>
-									</div>
-
-
-
-								</div>
-							</div>
-						</div>
-
-					</div>
-
-					<div class="box_sorority"><img src="images/sorority_web.gif" id="size-box-tablet" class="img-fluid"
-							alt="sorority_gif">
-
-
-						<div class="box_sorority_hover">
-							<span id="font">Sorority | Logo Animation</span>
-							<a class="modal-open" href="#modal-sorority">View</a>
-						</div>
-
-						<div class="modal" id="modal-sorority">
-
-							<div class="modal-content">
-								<a href="#box_sorority" class="modal-close" title="Close Modal">X</a>
-
-								<div class="modal-area">
-
-									<div id="video-position" class="embed-responsive embed-responsive-4by3">
-										<div class="video-scroll-1">
-											<embed src="https://player.vimeo.com/video/469983930" width="640"
-												height="640" allowfullscreen></embed>
-										</div>
-
-
-									</div>
-
-									<h3 class="sorority">Sorority</h3>
-
-									<p class="content-modal">Rock Band Sorority!!!!</p>
-
-
-								</div>
-							</div>
-						</div>
-
-
-
-
-					</div>
-
-					<div class="box_teprovocapp"><img src="images/te-provocapp_web.jpg" id="size-box-tablet"
-							class="img-fluid" alt="provocapp_gif">
-
-
-						<div class="box_teprovocapp_hover">
-							<span id="font">Te Provocapp | Logo Animation</span>
-							<a class="modal-open" href="#modal-teprovocapp">View</a>
-						</div>
-
-						<div class="modal" id="modal-teprovocapp">
-
-							<div class="modal-content">
-								<a href="#box_teprovocapp" class="modal-close" title="Close Modal">X</a>
-
-								<div class="modal-area">
-
-									<div id="video-position" class="embed-responsive embed-responsive-4by3">
-										<div class="video-scroll-1">
-											<embed src="https://player.vimeo.com/video/470243004" width="640"
-												height="640" allowfullscreen></embed>
-										</div>
-
-
-									</div>
-
-									<h3 class="teprovocapp">Te Provocapp</h3>
-
-									<p class="content-modal">This is a logo animation where I
+                        <div class="box-item" id="te-provocapp"><img src="images/te-provocapp.jpg" alt="te-provocapp" class="img-fluid rounded">
+                            <a class="item-hover" href="#modal-te-provocapp">
+                                <p>Tap to see</p>
+                            </a>
+                            <div class="modall" id="modal-te-provocapp">
+                                <div class="modall-content">
+                                    <a class="close-modall" id="fade-in" href="#te-provocapp">x</a>
+                                    <div id="video"><div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/470243004?byline=0&portrait=0" 
+                                        style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen; picture-in-picture">
+                                        </iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                                    </div>
+                                    <ul>
+                                       <h2 class="tittle">Te Provocapp</h2>
+                                       <p class="description">This is a logo animation where I
 										collaborated for this app "TeProvocapp" in Venezuela. The logo design
 										was made by "TeProvocapp".</p>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
 
-
-								</div>
-							</div>
-						</div>
-
-
-					</div>
-
-
-
-					<div class="box_ideando"><img src="images/ideando_web.gif" id="size-box-tablet" class="img-fluid"
-							alt="ideando_gif">
-
-
-						<div class="box_ideando_hover">
-							<span id="font">Ideando Design | Logo Animation</span>
-							<a class="modal-open" href="#modal-ideando">View</a>
-						</div>
-
-						<div class="modal" id="modal-ideando">
-
-							<div class="modal-content">
-								<a href="#box_ideando" class="modal-close" title="Close Modal">X</a>
-
-								<div class="modal-area">
-
-									<div id="video-position" class="embed-responsive embed-responsive-4by3">
-										<div class="video-scroll-1">
-											<embed src="https://player.vimeo.com/video/469983822" width="640"
-												height="640" allowfullscreen></embed>
-										</div>
-
-
-									</div>
-
-
-
-									<h3 class="ideando">Ideando Design</h3>
-
-									<p class="content-modal">Just a fun logo animation that I made for Ideando Design in
+                        <div class="box-item" id="ideando"><img src="images/ideando.gif" alt="ideando" class="img-fluid rounded">
+                            <a class="item-hover" href="#modal-ideando">
+                                <p>Tap to see</p>
+                            </a>
+                            <div class="modall" id="modal-ideando">
+                                <div class="modall-content">
+                                    <a class="close-modall" id="fade-in" href="#ideando">x</a>
+                                    <div id="video"><div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/469983822?byline=0&portrait=0" 
+                                        style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen; picture-in-picture">
+                                        </iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                                    </div>
+                                    <ul>
+                                       <h2 class="tittle">Ideando Design</h2>
+                                       <p class="description">Just a fun logo animation that I made for Ideando Design in
 										Venezuela. The logo design was made by "Ideando design".</p>
-
-
-								</div>
-							</div>
-						</div>
-
-
-
-
-					</div>
-
-
-
-					<div class="box_calavera"><img src="images/calavera_web.gif" id="size-box-tablet"
-							class="img-fluid" alt="calavera_gif">
-
-
-						<div class="box_calavera_hover">
-							<span id="font">Calavera | Gif</span>
-							<a class="modal-open" href="#modal-calavera">View</a>
-						</div>
-
-						<div class="modal" id="modal-calavera">
-
-							<div class="modal-content">
-								<a href="#box_calavera" class="modal-close" title="Close Modal">X</a>
-
-								<div class="modal-area">
-
-									<div id="video-position" class="embed-responsive embed-responsive-4by3">
-
-										<div class="video-scroll-1">
-											<embed src="https://player.vimeo.com/video/469983709" width="640"
-												height="640" allowfullscreen></embed>
-										</div>
-
-
-									</div>
-
-
-
-									<h3 class="calavera">Calavera</h3>
-
-									<p class="content-modal">Skull frame by frame!</p>
-
-
-								</div>
-							</div>
-						</div>
-
-
-
-
-					</div>
-
-
-
-					<div class="box_alien"><img src="images/alien_web.gif" id="size-box-tablet" class="img-fluid"
-							alt="alien_gif">
-
-
-						<div class="box_alien_hover">
-							<span id="font">Chillin un rato! | Gif</span>
-							<a class="modal-open" href="#modal-alien">View</a>
-						</div>
-
-						<div class="modal" id="modal-alien">
-
-							<div class="modal-content">
-								<a href="#box_alien" class="modal-close" title="Close Modal">X</a>
-
-								<div class="modal-area">
-
-									<div id="video-position" class="embed-responsive embed-responsive-4by3">
-
-										<div class="video-scroll-1">
-											<embed src="https://player.vimeo.com/video/469983636" width="640"
-												height="640" allowfullscreen></embed>
-										</div>
-
-
-									</div>
-
-
-
-									<h3 id="alien">Chilliando</h3>
-
-									<p class="content-modal">Actual footage of me chilling after a hard day of work.</p>
-
-
-								</div>
-							</div>
-						</div>
-
-
-
-
-					</div>
-
-
-					<div class="box_pizza"><img src="images/pizza_web.jpg" id="size-box-tablet" class="img-fluid"
-							alt="pizza_jpg">
-
-
-						<div class="box_pizza_hover">
-							<span id="font">Love Pizza | Gif</span>
-							<a class="modal-open" href="#modal-pizza">View</a>
-						</div>
-
-
-						<div class="modal" id="modal-pizza">
-							<div class="modal-content">
-								<a href="#box_pizza" class="modal-close" title="Close Modal">X</a>
-
-								<div class="modal-area">
-
-									<div id="video-position" class="embed-responsive embed-responsive-4by3">
-
-										<div class="video-scroll-1">
-											<embed src="https://player.vimeo.com/video/469983910" width="640"
-												height="645" allowfullscreen></embed>
-										</div>
-
-
-									</div>
-
-									<h3 class="pizza">Pizza Pizza Pizza</h3>
-
-									<p class="content-modal">Because pizza is the best !!</p>
-
-
-								</div>
-
-							</div>
-
-						</div>
-					</div>
-					<div class="box_tommy"><img src="images/tommy_web.jpg" id="size-box-tablet" class="img-fluid"
-							alt="tommy_jpg">
-
-
-						<div class="box_tommy_hover">
-							<span id="font">Tommy | Gif</span>
-							<a class="modal-open" href="#modal-tommy">View</a>
-						</div>
-
-
-						<div class="modal" id="modal-tommy">
-							<div class="modal-content">
-								<a href="#box_tommy" class="modal-close" title="Close Modal">X</a>
-
-								<div class="modal-area">
-
-									<div id="video-position" class="embed-responsive embed-responsive-4by3">
-
-										<div class="video-scroll-1">
-											<embed src="https://player.vimeo.com/video/469983783" width="640"
-												height="645" allowfullscreen></embed>
-										</div>
-
-
-									</div>
-
-
-
-									<h3 class="tommy">Tommys Life</h3>
-
-									<p class="content-modal">Tommy is a character that represents my cat that
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-item" id="calavera"><img src="images/cooquick.jpg" alt="calavera" class="img-fluid rounded">
+                            <a class="item-hover" href="#modal-calavera"> 
+                                <p>Tap to see</p>
+                            </a>
+                            <div class="modall" id="modal-calavera">
+                                <div class="modall-content">
+                                    <a class="close-modall" id="fade-in" href="#calavera">x</a>
+                                    <div id="video"><div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/469983709?byline=0&portrait=0" 
+                                        style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen; picture-in-picture">
+                                        </iframe></div><script src="https://player.vimeo.com/api/player.js"></script></div>
+                                    <ul>
+                                       <h2 class="tittle">Skull</h2>
+                                       <p class="description">Skull frame by frame!</p>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-item" id="pizza"><img src="images/pizza.jpg" alt="pizza" class="img-fluid rounded">
+                            <a class="item-hover" href="#modal-pizza">
+                                <p>Tap to see</p>
+                            </a>
+                            <div class="modall" id="modal-pizza">
+                                <div class="modall-content">
+                                    <a class="close-modall" id="fade-in" href="#pizza">x</a>
+                                    <div id="video"><div style="padding:100.75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/469983910?byline=0&portrait=0" 
+                                        style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen; picture-in-picture">
+                                        </iframe></div><script src="https://player.vimeo.com/api/player.js"></script></div>
+                                    <ul>
+                                       <h2 class="tittle">Pizza all day</h2>
+                                       <p class="description">Because pizza is the best!!</p>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-item" id="tommy"><img src="images/tommy.jpg" alt="tommy" class="img-fluid rounded">
+                            <a class="item-hover" href="#modal-tommy">
+                                <p>Tap to see</p>
+                            </a>
+                            <div class="modall" id="modal-tommy">
+                                <div class="modall-content">
+                                    <a class="close-modall" id="fade-in" href="#tommy">x</a>
+                                    <div id="video"><div style="padding:100.83% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/469983783?byline=0&portrait=0" 
+                                        style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen; picture-in-picture">
+                                        </iframe></div><script src="https://player.vimeo.com/api/player.js"></script></div>
+                                    <ul>
+                                       <h2 class="tittle">Tommy's Life</h2>
+                                       <p class="description">Tommy is a character that represents my cat that
 										spent his life fighting on the roof of my room and not letting me sleep. Good
 										memories.</p>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
 
+                    </div>
+                </div>
 
-								</div>
+            </div>
+        </div>
 
-							</div>
+    </main>
 
-						</div>
+    <footer>
+        <div class="background">
+                <h4 class="brand">BetoenlaWeb</h4>
+                <div class="icons"> 
+                    <a href="https://www.instagram.com/betoenlaweb/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/betoenlaweb?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:animate@betoenlaweb.com"><i class="fas fa-paper-plane"></i></a> 
+                </div>
+        </div>
+    </footer>
 
-					</div>
-
-				</div>
-
-			</div>
-
-		</div>
-
-
-
-
-		<div class="row">
-
-			<div class="col-lg-12 col-xs-12 col-sm-12">
-
-				<div class="background">
-
-					<p class="brand">BetoenlaWeb2020</p>
-
-					<a href="https://www.instagram.com/betoenlaweb/" id="ig-bottom">
-						<img src="bottom_network/ig-bottom.png" class="img-fluid" alt="BetoenlaWeb on IG"></a>
-				</div>
-
-			</div>
-
-		</div>
-
-	</div>
-
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-		crossorigin="anonymous"></script>
-	<script src="js/java.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/java.js"></script>    
 </body>
-
 </html>
+        
+            
